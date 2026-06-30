@@ -1,0 +1,28 @@
+---
+---
+
+$max-width: 1400px;
+
+@import "minimal-mistakes";
+
+#main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.page__content,
+.page__hero--overlay,
+section.page__content {
+  padding: 0;
+}
+
+.page {
+  padding: 0;
+}
+
+body.home-no-title .masthead .site-title {
+  display: none;
+}
