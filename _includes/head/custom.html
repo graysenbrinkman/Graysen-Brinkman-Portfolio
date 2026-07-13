@@ -1,0 +1,17 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".greedy-nav .visible-links a");
+    links.forEach(function (link) {
+      const href = link.getAttribute("href");
+      const path = window.location.pathname;
+      if (href && (path === href || path.startsWith(href) && href !== "/")) {
+        link.style.color = "#2c5f8a";
+        link.style.fontWeight = "600";
+      }
+      if (href === "/" && path === "/") {
+        link.style.color = "#2c5f8a";
+        link.style.fontWeight = "600";
+      }
+    });
+  });
+</script>

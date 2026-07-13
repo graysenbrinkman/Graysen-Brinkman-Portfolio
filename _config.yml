@@ -23,17 +23,6 @@ plugins:
   - jekyll-include-cache
 
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: "_pages"
@@ -41,6 +30,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project
 
 category_archive:
   type: liquid
@@ -55,3 +49,8 @@ atom_feed:
   
 sass:
   sass_dir: _sass
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/

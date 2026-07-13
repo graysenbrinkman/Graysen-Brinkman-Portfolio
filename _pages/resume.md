@@ -1,9 +1,24 @@
 ---
+title: ""
+layout: splash
+author_profile: false
 permalink: /resume/
-title: "Resume"
-layout: single
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+<div style="margin-top: 1rem;">
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+    <h1 style="font-size: 1.8rem; font-weight: 700; margin: 0; color: #222;">Resume</h1>
+    <a href="/assets/files/GraysenBrinkmanResume.pdf" download
+       style="font-size: 0.85rem; padding: 0.5rem 1.2rem; border: 1px solid #333; border-radius: 6px; color: #333; text-decoration: none;">
+      Download PDF
+    </a>
+  </div>
+
+  <iframe src="/assets/files/GraysenBrinkmanResume.pdf"
+          width="100%"
+          height="900px"
+          style="border: 1px solid #e5e5e5; border-radius: 8px;">
+  </iframe>
+
+</div>
