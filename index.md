@@ -4,17 +4,17 @@ layout: splash
 author_profile: false
 ---
 
-<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; margin-top: 1rem;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
 
-  <div style="flex: 1;">
+  <div style="flex: 1; min-width: 200px;">
 
     <h1 style="font-size: 2.2rem; font-weight: 700; margin: 0 0 0.25rem 0; line-height: 1.2;">
       Graysen Brinkman
     </h1>
 
     <p style="font-size: 0.85rem; color: #888; margin: 0 0 1rem 0; line-height: 1.6;">
-       Aerospace Engineering Student &nbsp;·&nbsp; Embry-Riddle Aeronautical University<br>
-       Minor in Applied Mathematics &nbsp;·&nbsp; GPA: 4.0 &nbsp;·&nbsp; Expected Graduation: Dec 2027
+      Aerospace Engineering Student &nbsp;·&nbsp; Embry-Riddle Aeronautical University<br>
+      Minor in Applied Mathematics &nbsp;·&nbsp; GPA: 4.0 &nbsp;·&nbsp; Expected Graduation: Dec 2027
     </p>
 
     <p style="font-size: 0.9rem; color: #333; line-height: 1.7; margin: 0;">
@@ -25,15 +25,15 @@ author_profile: false
 
   </div>
 
-  <div style="flex: 0 0 240px; margin-top: 0;">
+  <div style="flex: 0 0 180px;">
     <img src="/assets/images/bio-photo.jpg"
          alt="Graysen Brinkman"
-         style="width: 240px; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
+         style="width: 180px; height: 230px; object-fit: cover; border-radius: 8px; display: block;">
   </div>
 
 </div>
 
-<div style="margin-top: 0.5rem;">
+<div style="margin-top: 1.5rem;">
 
   <div style="display: flex; gap: 2.5rem; align-items: flex-start;">
 
@@ -62,7 +62,7 @@ author_profile: false
     Featured Projects
   </h2>
 
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
+  <div class="projects-grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
 
     <a href="/projects/project-1/" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
       <div style="width: 100%; height: 160px; background: #eaeaea; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.85rem;">

@@ -22,3 +22,20 @@ section.page__content {
 .page {
   padding: 0;
 }
+
+.greedy-nav .visible-links a.active,
+.greedy-nav .visible-links li.active a {
+  color: #2c5f8a;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  #main {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

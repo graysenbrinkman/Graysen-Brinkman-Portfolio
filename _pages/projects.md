@@ -15,7 +15,7 @@ permalink: /projects/
     <div style="flex: 1; height: 1px; background: #e5e5e5;"></div>
   </div>
 
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
+  <div class="projects-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
     {% assign research = site.projects | where: "section", "research" %}
     {% for project in research %}
     <a href="{{ project.url }}" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
@@ -46,7 +46,7 @@ permalink: /projects/
     <div style="flex: 1; height: 1px; background: #e5e5e5;"></div>
   </div>
 
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
+  <div class="projects-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
     {% assign projects = site.projects | where: "section", "projects" %}
     {% for project in projects %}
     <a href="{{ project.url }}" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
