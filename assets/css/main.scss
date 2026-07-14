@@ -29,6 +29,16 @@ section.page__content {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .greedy-nav .visible-links {
+    display: none !important;
+  }
+
+  .greedy-nav__toggle {
+    display: block !important;
+  }
+}
+
 @media (max-width: 600px) {
   #main {
     padding-left: 0.75rem;

@@ -6,52 +6,48 @@ author_profile: false
 
 <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
 
-  <div style="flex: 1; min-width: 200px;">
+  <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 0.75rem;">
 
-    <h1 style="font-size: 2.2rem; font-weight: 700; margin: 0 0 0.25rem 0; line-height: 1.2;">
-      Graysen Brinkman
-    </h1>
+    <div>
+      <h1 style="font-size: 2.2rem; font-weight: 700; margin: 0 0 0.4rem 0; line-height: 1.2;">
+        Graysen Brinkman
+      </h1>
 
-    <p style="font-size: 0.85rem; color: #888; margin: 0 0 1rem 0; line-height: 1.6;">
-      Aerospace Engineering Student &nbsp;·&nbsp; Embry-Riddle Aeronautical University<br>
-      Minor in Applied Mathematics &nbsp;·&nbsp; GPA: 4.0 &nbsp;·&nbsp; Expected Graduation: Dec 2027
-    </p>
+      <p style="font-size: 0.85rem; color: #888; margin: 0 0 0.75rem 0; line-height: 1.6;">
+        Aerospace Engineering Student &nbsp;·&nbsp; Embry-Riddle Aeronautical University<br>
+        Aeronautics &nbsp;·&nbsp; Applied Mathematics Minor &nbsp;·&nbsp; GPA: 4.0 &nbsp;·&nbsp; December 2027
+      </p>
 
-    <p style="font-size: 0.9rem; color: #333; line-height: 1.7; margin: 0;">
-      I am an aerospace engineering student focused on flight mechanics, aircraft design,
-      and aerospace systems. My interests center around understanding and analyzing the
-      performance and behavior of aircraft and spacecraft systems.
-    </p>
+      <p style="font-size: 0.82rem; color: #444; line-height: 1.75; margin: 0;">
+        I am an aerospace engineering student at Embry-Riddle with a concentration in aeronautics and a minor in applied mathematics. I am drawn to the mathematical side of engineering, particularly in areas like flight mechanics, and I am actively building experience through research and design projects on campus.
+      </p>
+    </div>
+
+    <div style="display: flex; gap: 2.5rem; align-items: flex-start; margin-top: 0.25rem;">
+
+      <a href="mailto:graysenbrinkman@gmail.com" style="text-decoration: none; color: #444; text-align: center;">
+        <i class="fas fa-envelope fa-2x"></i>
+        <div style="font-size: 0.75rem; margin-top: 0.3rem; color: #888;">Email</div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/graysen-brinkman/" target="_blank" style="text-decoration: none; color: #444; text-align: center;">
+        <i class="fab fa-linkedin fa-2x"></i>
+        <div style="font-size: 0.75rem; margin-top: 0.3rem; color: #888;">LinkedIn</div>
+      </a>
+
+      <a href="https://github.com/graysenbrinkman" target="_blank" style="text-decoration: none; color: #444; text-align: center;">
+        <i class="fab fa-github fa-2x"></i>
+        <div style="font-size: 0.75rem; margin-top: 0.3rem; color: #888;">GitHub</div>
+      </a>
+
+    </div>
 
   </div>
 
-  <div style="flex: 0 0 180px;">
-    <img src="/assets/images/bio-photo.jpg"
+  <div style="flex: 0 0 260px; margin-top: 2rem;">
+    <img src="/assets/images/bio-photo.png"
          alt="Graysen Brinkman"
-         style="width: 180px; height: 230px; object-fit: cover; border-radius: 8px; display: block;">
-  </div>
-
-</div>
-
-<div style="margin-top: 1.5rem;">
-
-  <div style="display: flex; gap: 2.5rem; align-items: flex-start;">
-
-    <a href="mailto:graysenbrinkman@gmail.com" style="text-decoration: none; color: #444; text-align: center;">
-      <i class="fas fa-envelope fa-2x"></i>
-      <div style="font-size: 0.75rem; margin-top: 0.3rem; color: #888;">Email</div>
-    </a>
-
-    <a href="https://www.linkedin.com/in/graysen-brinkman/" target="_blank" style="text-decoration: none; color: #444; text-align: center;">
-      <i class="fab fa-linkedin fa-2x"></i>
-      <div style="font-size: 0.75rem; margin-top: 0.3rem; color: #888;">LinkedIn</div>
-    </a>
-
-    <a href="https://github.com/graysenbrinkman" target="_blank" style="text-decoration: none; color: #444; text-align: center;">
-      <i class="fab fa-github fa-2x"></i>
-      <div style="font-size: 0.75rem; margin-top: 0.3rem; color: #888;">GitHub</div>
-    </a>
-
+         style="width: 260px; height: 350px; object-fit: cover; object-position: top; border-radius: 8px; display: block; border: 2px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </div>
 
 </div>
