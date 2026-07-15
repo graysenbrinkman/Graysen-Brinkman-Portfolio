@@ -13,9 +13,13 @@ author_profile: false
         Graysen Brinkman
       </h1>
 
-      <p style="font-size: 0.85rem; color: #888; margin: 0 0 0.75rem 0; line-height: 1.6;">
+      <p style="font-size: 0.85rem; color: #888; margin: 0 0 0.5rem 0; line-height: 1.6;">
         Aerospace Engineering Student &nbsp;·&nbsp; Embry-Riddle Aeronautical University<br>
-        Aeronautics &nbsp;·&nbsp; Applied Mathematics Minor &nbsp;·&nbsp; GPA: 4.0 &nbsp;·&nbsp; December 2027
+        GPA: 4.0 &nbsp;·&nbsp; Expected Graduation: Dec 2027
+      </p>
+
+      <p style="font-size: 0.85rem; color: #555; font-weight: 500; margin: 0 0 0.75rem 0; line-height: 1.6;">
+        Exploring aeronautics with a focus on flight mechanics
       </p>
 
       <!-- MOBILE ONLY PHOTO - shows between subtitle and bio on mobile -->
@@ -26,7 +30,7 @@ author_profile: false
       </div>
 
       <p style="font-size: 0.82rem; color: #444; line-height: 1.75; margin: 0;">
-        I am an aerospace engineering student at Embry-Riddle with a concentration in aeronautics and a minor in applied mathematics. I am drawn to the mathematical side of engineering, particularly in areas like flight mechanics, and I am actively building experience through research and design projects on campus.
+        I am an aerospace engineering student at Embry-Riddle with a concentration in aeronautics and a minor in applied mathematics. What drew me to engineering in the first place was math, specifically the idea that real-world systems can be modeled and solved with equations, which is why flight mechanics has become my main interest. I'm still exploring which areas excite me most, so I'm using research and design projects on campus to test out what parts of aeronautics I want to specialize in and pursue after graduation.
       </p>
     </div>
 
@@ -59,6 +63,20 @@ author_profile: false
   </div>
 
 </div>
+
+<div style="margin-top: 3rem;">
+
+  <h2 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem; color: #222;">
+    What I'm Working Toward
+  </h2>
+
+  <ul style="font-size: 0.82rem; color: #444; line-height: 1.8; margin: 0; padding-left: 1.2rem;">
+    <li>Building a stronger foundation in flight mechanics through coursework, research, and independent projects</li>
+    <li>Using my last semesters to explore what interests me most within aeronautics before committing to a specific path after graduation</li>
+  </ul>
+
+</div>
+
 
 <div style="margin-top: 3.5rem;">
 
