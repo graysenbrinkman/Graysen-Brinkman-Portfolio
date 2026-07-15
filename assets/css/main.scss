@@ -35,7 +35,24 @@ section.page__content {
   }
 
   .greedy-nav__toggle {
-    display: block !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .bio-left {
+    order: 2;
+  }
+
+  .bio-photo {
+    order: 1;
+    flex: 0 0 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .bio-photo img {
+    width: 100% !important;
+    height: 250px !important;
   }
 }
 

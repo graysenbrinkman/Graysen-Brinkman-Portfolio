@@ -6,7 +6,7 @@ author_profile: false
 
 <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
 
-  <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 0.75rem;">
+  <div class="bio-left" style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 0.75rem;">
 
     <div>
       <h1 style="font-size: 2.2rem; font-weight: 700; margin: 0 0 0.4rem 0; line-height: 1.2;">
@@ -44,11 +44,13 @@ author_profile: false
 
   </div>
 
-  <div style="flex: 0 0 260px; margin-top: 2rem;">
+  <div class="bio-photo" style="flex: 0 0 260px; margin-top: 2rem;">
     <img src="/assets/images/bio-photo.png"
          alt="Graysen Brinkman"
          style="width: 260px; height: 350px; object-fit: cover; object-position: top; border-radius: 8px; display: block; border: 2px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </div>
+
+</div>
 
 </div>
 
