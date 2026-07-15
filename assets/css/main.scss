@@ -42,6 +42,10 @@ section.page__content {
     pointer-events: auto !important;
   }
 
+  .greedy-nav .hidden-links {
+    display: block;
+  }
+
   .greedy-nav {
     justify-content: space-between;
   }
@@ -53,12 +57,13 @@ section.page__content {
   .bio-photo {
     order: 2;
     flex: 0 0 100% !important;
-    margin-top: 0 !important;
+    margin-top: 1rem !important;
   }
 
   .bio-photo img {
-    width: 100% !important;
-    height: 250px !important;
+    width: 160px !important;
+    height: 200px !important;
+    object-position: top !important;
   }
 }
 
