@@ -38,14 +38,19 @@ section.page__content {
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
+    margin-left: auto;
+  }
+
+  .greedy-nav {
+    justify-content: space-between;
   }
 
   .bio-left {
-    order: 2;
+    order: 1;
   }
 
   .bio-photo {
-    order: 1;
+    order: 2;
     flex: 0 0 100% !important;
     margin-top: 0 !important;
   }
