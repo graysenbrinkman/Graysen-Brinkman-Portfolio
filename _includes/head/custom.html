@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const items = visibleLinks.querySelectorAll("li");
       items.forEach(function (item) {
         if (!item.dataset.moved) {
-          hiddenLinks.prepend(item.cloneNode(true));
+          hiddenLinks.appendChild(item.cloneNode(true));
           item.dataset.moved = "true";
           item.style.display = "none";
         }

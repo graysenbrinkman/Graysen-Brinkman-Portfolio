@@ -22,7 +22,7 @@ author_profile: false
       <div class="bio-photo-mobile" style="display: none; margin-bottom: 1rem;">
         <img src="/assets/images/bio-photo.png"
              alt="Graysen Brinkman"
-             style="width: 140px; height: 175px; object-fit: cover; object-position: top; border-radius: 8px; display: block; border: 2px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+             style="width: 180px; height: 225px; object-fit: cover; object-position: top; border-radius: 8px; display: block; border: 2px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
       </div>
 
       <p style="font-size: 0.82rem; color: #444; line-height: 1.75; margin: 0;">

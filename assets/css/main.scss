@@ -56,7 +56,9 @@ section.page__content {
 
 .bio-photo-mobile {
   display: block !important;
-  }
+  display: flex !important;
+  justify-content: center;
+}
 }
 
 @media (max-width: 600px) {
