@@ -39,6 +39,7 @@ section.page__content {
     visibility: visible !important;
     opacity: 1 !important;
     margin-left: auto;
+    pointer-events: auto !important;
   }
 
   .greedy-nav {
