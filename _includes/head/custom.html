@@ -15,3 +15,59 @@
     });
   });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Nav active highlight
+  const links = document.querySelectorAll(".greedy-nav .visible-links a");
+  links.forEach(function (link) {
+    const href = link.getAttribute("href");
+    const path = window.location.pathname;
+    if (href && path === href) {
+      link.style.color = "#2c5f8a";
+      link.style.fontWeight = "600";
+    }
+    if (href && href !== "/" && path.startsWith(href)) {
+      link.style.color = "#2c5f8a";
+      link.style.fontWeight = "600";
+    }
+  });
+
+  // Force all nav items into hamburger on mobile
+  function handleNav() {
+    const nav = document.querySelector(".greedy-nav");
+    const visibleLinks = document.querySelector(".greedy-nav .visible-links");
+    const hiddenLinks = document.querySelector(".greedy-nav .hidden-links");
+    const toggle = document.querySelector(".greedy-nav__toggle");
+
+    if (!nav || !visibleLinks || !hiddenLinks || !toggle) return;
+
+    if (window.innerWidth <= 768) {
+      // Move all visible links to hidden
+      const items = visibleLinks.querySelectorAll("li");
+      items.forEach(function (item) {
+        if (!item.dataset.moved) {
+          hiddenLinks.prepend(item.cloneNode(true));
+          item.dataset.moved = "true";
+          item.style.display = "none";
+        }
+      });
+      toggle.style.display = "flex";
+    } else {
+      // Restore on desktop
+      const items = visibleLinks.querySelectorAll("li");
+      items.forEach(function (item) {
+        item.style.display = "";
+        item.dataset.moved = "";
+      });
+      hiddenLinks.querySelectorAll("li").forEach(function(item) {
+        item.remove();
+      });
+      toggle.style.display = "";
+    }
+  }
+
+  handleNav();
+  window.addEventListener("resize", handleNav);
+});
+</script>

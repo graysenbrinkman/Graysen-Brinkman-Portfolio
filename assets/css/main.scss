@@ -23,47 +23,39 @@ section.page__content {
   padding: 0;
 }
 
-.greedy-nav .visible-links a.active,
-.greedy-nav .visible-links li.active a {
-  color: #2c5f8a;
-  font-weight: 600;
-}
-
 @media (max-width: 768px) {
-  .greedy-nav .visible-links {
-    display: none !important;
+  .greedy-nav .visible-links li {
+    display: none;
   }
 
   .greedy-nav__toggle {
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
-    margin-left: auto;
     pointer-events: auto !important;
-  }
-
-  .greedy-nav .hidden-links {
-    display: block;
-  }
-
-  .greedy-nav {
-    justify-content: space-between;
+    margin-left: auto;
   }
 
   .bio-left {
     order: 1;
+    width: 100%;
   }
 
   .bio-photo {
     order: 2;
+    width: 100% !important;
     flex: 0 0 100% !important;
     margin-top: 1rem !important;
+    display: flex !important;
+    justify-content: flex-start;
   }
 
-  .bio-photo img {
-    width: 160px !important;
-    height: 200px !important;
-    object-position: top !important;
+  .bio-photo {
+  display: none !important;
+  }
+
+.bio-photo-mobile {
+  display: block !important;
   }
 }
 

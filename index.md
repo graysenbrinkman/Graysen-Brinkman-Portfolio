@@ -18,6 +18,13 @@ author_profile: false
         Aeronautics &nbsp;·&nbsp; Applied Mathematics Minor &nbsp;·&nbsp; GPA: 4.0 &nbsp;·&nbsp; December 2027
       </p>
 
+      <!-- MOBILE ONLY PHOTO - shows between subtitle and bio on mobile -->
+      <div class="bio-photo-mobile" style="display: none; margin-bottom: 1rem;">
+        <img src="/assets/images/bio-photo.png"
+             alt="Graysen Brinkman"
+             style="width: 140px; height: 175px; object-fit: cover; object-position: top; border-radius: 8px; display: block; border: 2px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+      </div>
+
       <p style="font-size: 0.82rem; color: #444; line-height: 1.75; margin: 0;">
         I am an aerospace engineering student at Embry-Riddle with a concentration in aeronautics and a minor in applied mathematics. I am drawn to the mathematical side of engineering, particularly in areas like flight mechanics, and I am actively building experience through research and design projects on campus.
       </p>
@@ -44,6 +51,7 @@ author_profile: false
 
   </div>
 
+  <!-- DESKTOP ONLY PHOTO -->
   <div class="bio-photo" style="flex: 0 0 260px; margin-top: 2rem;">
     <img src="/assets/images/bio-photo.png"
          alt="Graysen Brinkman"
