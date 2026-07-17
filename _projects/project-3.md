@@ -1,11 +1,27 @@
 ---
-title: "Project Title Three"
-date_range: "Aug 2025 – Nov 2025"
+title: "Nozzle Flow Classification"
+date_range: "April 2026"
 category: "Projects"
 section: "projects"
-skills: ["MATLAB", "Simulink", "Aerospace Toolbox"]
-image:
-objective: "A brief statement of what this project set out to accomplish and why it mattered."
-methods: "Describe the approach, tools, and processes used to carry out the project."
-takeaways: "What you learned, what worked, what you would do differently."
+skills: ["MATLAB", "Compressible Aerodynamics", "Flow Classification", "Numerical Methods", "Data Visualization"]
+image: "/assets/images/nozzle-case-4.jpg"
+description: "Developed a MATLAB tool to classify converging-diverging nozzle flow regimes and identify potential shock behavior."
+objective: "Analyze flow in a converging-diverging nozzle across a range of back pressure ratios to identify key nozzle flow characteristics, including exit velocity and the location and angle of shocks where present."
+methods: "Developed a MATLAB program to classify nozzle flow behavior based on a specified back pressure ratio, applying compressible flow relations to determine the operating regime and compute exit conditions and normal shock location. Tested the program across seven representative pressure ratios and verified the results against theoretical nozzle behavior."
+gallery:
+  - image: "/assets/images/nozzle-case-1.jpg"
+    caption: "Case 1. Not Choked Flow"
+  - image: "/assets/images/nozzle-case-2.jpg"
+    caption: "Case 2. Choked at the Throat"
+  - image: "/assets/images/nozzle-case-3.jpg"
+    caption: "Case 3. Normal Shock in the Diverging Section"
+  - image: "/assets/images/nozzle-case-4.jpg"
+    caption: "Case 4. Normal Shock at the Exit Plane"
+  - image: "/assets/images/nozzle-case-5.jpg"
+    caption: "Case 5. Overexpanded Flow"
+  - image: "/assets/images/nozzle-case-6.jpg"
+    caption: "Case 6. Perfectly Expanded Flow"
+  - image: "/assets/images/nozzle-case-7.jpg"
+    caption: "Case 7. Underexpanded Flow"
+takeaways: "Successfully built a MATLAB tool that correctly classified all seven nozzle operating regimes and matched theoretical predictions, strengthening my understanding of compressible flow theory and its numerical implementation."
 ---

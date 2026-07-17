@@ -57,7 +57,7 @@ author_profile: false
 
   <!-- DESKTOP ONLY PHOTO -->
   <div class="bio-photo" style="flex: 0 0 260px; margin-top: 2rem;">
-    <img src="/assets/images/bio-photo.png"
+    <img src="/assets/images/index-bio-photo.png"
          alt="Graysen Brinkman"
          style="width: 260px; height: 350px; object-fit: cover; object-position: top; border-radius: 8px; display: block; border: 2px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </div>
