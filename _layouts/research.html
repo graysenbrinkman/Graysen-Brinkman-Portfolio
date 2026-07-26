@@ -52,12 +52,13 @@ layout: default
   </div>
   {% endif %}
 
-  <div style="margin-bottom: 2rem;">
-    <h2 style="font-size: 1.1rem; font-weight: 700; color: #222; margin-bottom: 0.75rem;">Outcome</h2>
-    <p style="font-size: 0.95rem; color: #333; line-height: 1.75;">
-      {{ page.status }}{% if page.paper_link %} — <a href="{{ page.paper_link }}" target="_blank">View Published Paper →</a>{% endif %}
-    </p>
-  </div>
+ <div style="margin-bottom: 2rem;">
+  <h2 style="font-size: 1.1rem; font-weight: 700; color: #222; margin-bottom: 0.75rem;">Outcome</h2>
+  <p style="font-size: 0.95rem; color: #333; line-height: 1.75;">{{ page.status }}. The paper details our ROS2 integration approach and testing methodology and is available through ERAU Scholarly Commons.</p>
+  {% if page.paper_link %}
+  <a href="{{ page.paper_link }}" target="_blank" style="display: inline-block; margin-top: 0.75rem; padding: 0.5rem 1.2rem; border: 1px solid #333; border-radius: 6px; color: #333; text-decoration: none; font-size: 0.85rem;">View Paper</a>
+  {% endif %}
+</div>
 
   <div>
     <h2 style="font-size: 1.1rem; font-weight: 700; color: #222; margin-bottom: 0.75rem;">What I Learned</h2>

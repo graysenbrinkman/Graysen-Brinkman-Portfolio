@@ -24,7 +24,7 @@ author_profile: false
 
       <!-- MOBILE ONLY PHOTO - shows between subtitle and bio on mobile -->
       <div class="bio-photo-mobile" style="display: none; margin-bottom: 1rem;">
-        <img src="/assets/images/bio-photo.png"
+        <img src="/assets/images/index-bio-photo.png"
              alt="Graysen Brinkman"
              style="width: 180px; height: 225px; object-fit: cover; object-position: top; border-radius: 8px; display: block; border: 2px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
       </div>
@@ -86,39 +86,30 @@ author_profile: false
 
   <div class="projects-grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
 
-    <a href="/projects/project-1/" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-      <div style="width: 100%; height: 160px; background: #eaeaea; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.85rem;">
+  {% assign featured = site.projects | where: "featured", true | limit: 2 %}
+  {% for project in featured %}
+  <a href="{{ project.url }}" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+    <div style="width: 100%; height: 160px; background: #eaeaea; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.85rem;">
+      {% if project.image %}
+        <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+      {% else %}
         Project Image
+      {% endif %}
+    </div>
+    <div style="padding: 1.25rem;">
+      <span style="font-size: 0.72rem; color: #999;">{{ project.date_range }}</span>
+      <h3 style="font-size: 0.95rem; font-weight: 600; margin: 0.2rem 0 0.5rem 0; color: #222;">{{ project.title }}</h3>
+      <p style="font-size: 0.82rem; color: #555; line-height: 1.5; margin: 0 0 0.75rem 0;">{{ project.description }}</p>
+      <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+        {% for skill in project.skills limit:3 %}
+          <span style="font-size: 0.72rem; background: #f0f0f0; color: #555; padding: 0.2rem 0.55rem; border-radius: 20px;">{{ skill }}</span>
+        {% endfor %}
       </div>
-      <div style="padding: 1.25rem;">
-        <span style="font-size: 0.72rem; color: #999;">Jan 2026 – Mar 2026</span>
-        <h3 style="font-size: 0.95rem; font-weight: 600; margin: 0.2rem 0 0.5rem 0; color: #222;">Project Title One</h3>
-        <p style="font-size: 0.82rem; color: #555; line-height: 1.5; margin: 0 0 0.75rem 0;">A short description of the project goes here.</p>
-        <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-          <span style="font-size: 0.72rem; background: #f0f0f0; color: #555; padding: 0.2rem 0.55rem; border-radius: 20px;">MATLAB</span>
-          <span style="font-size: 0.72rem; background: #f0f0f0; color: #555; padding: 0.2rem 0.55rem; border-radius: 20px;">Python</span>
-          <span style="font-size: 0.72rem; background: #f0f0f0; color: #555; padding: 0.2rem 0.55rem; border-radius: 20px;">Data Analysis</span>
-        </div>
-      </div>
-    </a>
+    </div>
+  </a>
+  {% endfor %}
 
-    <a href="/projects/project-2/" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-      <div style="width: 100%; height: 160px; background: #eaeaea; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.85rem;">
-        Project Image
-      </div>
-      <div style="padding: 1.25rem;">
-        <span style="font-size: 0.72rem; color: #999;">Sep 2025 – Dec 2025</span>
-        <h3 style="font-size: 0.95rem; font-weight: 600; margin: 0.2rem 0 0.5rem 0; color: #222;">Project Title Two</h3>
-        <p style="font-size: 0.82rem; color: #555; line-height: 1.5; margin: 0 0 0.75rem 0;">A short description of the project goes here.</p>
-        <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-          <span style="font-size: 0.72rem; background: #f0f0f0; color: #555; padding: 0.2rem 0.55rem; border-radius: 20px;">SolidWorks</span>
-          <span style="font-size: 0.72rem; background: #f0f0f0; color: #555; padding: 0.2rem 0.55rem; border-radius: 20px;">CFD</span>
-          <span style="font-size: 0.72rem; background: #f0f0f0; color: #555; padding: 0.2rem 0.55rem; border-radius: 20px;">Technical Writing</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
+</div>
 
   <div style="text-align: center; margin-top: 2rem;">
     <a href="/projects/" style="display: inline-block; padding: 0.6rem 1.8rem; border: 1px solid #333; border-radius: 6px; color: #333; text-decoration: none; font-size: 0.9rem; font-weight: 500;">

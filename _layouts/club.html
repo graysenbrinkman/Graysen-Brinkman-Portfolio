@@ -4,7 +4,7 @@ layout: default
 
 <div style="max-width: 860px; margin: 2rem auto; padding: 0 1.5rem;">
 
-  <a href="/projects/" style="font-size: 0.85rem; color: #888; text-decoration: none;">← Back to Projects</a>
+  <a href="/projects/" style="font-size: 0.85rem; color: #888; text-decoration: none;">&larr; Back to Projects</a>
 
   <h1 style="font-size: 2rem; font-weight: 700; margin: 1rem 0 0.25rem 0; color: #222;">{{ page.title }}</h1>
 
@@ -12,13 +12,13 @@ layout: default
     {{ page.role }} &nbsp;·&nbsp; {{ page.date_range }}
   </p>
 
-  <div style="width: 100%; height: 280px; background: #eaeaea; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.9rem; margin-bottom: 2rem;">
-    {% if page.image %}
-      <img src="{{ page.image }}" alt="{{ page.title }}" style="width: 100%; height: 280px; object-fit: cover; border-radius: 10px; display: block;">
-    {% else %}
-      Project Image
-    {% endif %}
-  </div>
+<div style="width: 100%; height: 280px; border-radius: 10px; background: #eaeaea; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center;">
+  {% if page.image %}
+    <img src="{{ page.image }}" alt="{{ page.title }}" style="width: 100%; height: 280px; object-fit: cover; border-radius: 10px; display: block;">
+  {% else %}
+    <span style="color: #aaa; font-size: 0.9rem;">Project Image</span>
+  {% endif %}
+</div>
 
   <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
     {% for skill in page.skills %}
@@ -37,6 +37,20 @@ layout: default
     <h2 style="font-size: 1.1rem; font-weight: 700; color: #222; margin-bottom: 0.75rem;">What I Worked On</h2>
     <p style="font-size: 0.95rem; color: #333; line-height: 1.75;">{{ page.hands_on }}</p>
   </div>
+
+{% if page.gallery %}
+<div style="margin-bottom: 2rem;">
+  <h2 style="font-size: 1.1rem; font-weight: 700; color: #222; margin-bottom: 1rem;">Gallery</h2>
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+    {% for item in page.gallery %}
+      <figure style="margin: 0;">
+        <img src="{{ item.src }}" alt="{{ item.caption }}" style="width: 100%; display: block; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">
+        <figcaption style="text-align: center; margin-top: 0.6rem; color: #64748b; font-size: 0.85rem;">{{ item.caption }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
 
   <div style="margin-bottom: 2rem;">
     <h2 style="font-size: 1.1rem; font-weight: 700; color: #222; margin-bottom: 0.75rem;">Skills & Exposure Gained</h2>

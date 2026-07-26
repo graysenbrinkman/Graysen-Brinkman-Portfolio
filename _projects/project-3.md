@@ -1,5 +1,6 @@
 ---
 title: "Nozzle Flow Classification"
+featured: true
 date_range: "April 2026"
 category: "Projects"
 section: "projects"

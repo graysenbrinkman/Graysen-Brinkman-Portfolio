@@ -21,7 +21,7 @@ permalink: /projects/
     <a href="{{ project.url }}" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
       <div style="width: 100%; height: 160px; background: #eaeaea; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.85rem;">
         {% if project.image %}
-          <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+          <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; height: 160px; object-fit: {{ project.image_fit | default: 'cover' }}; background: #ffffff; padding: {% if project.image_fit == 'contain' %}0.75rem{% else %}0{% endif %}; display: block;">
         {% else %}
           Project Image
         {% endif %}
@@ -52,7 +52,7 @@ permalink: /projects/
     <a href="{{ project.url }}" style="text-decoration: none; color: inherit; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
       <div style="width: 100%; height: 160px; background: #eaeaea; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.85rem;">
         {% if project.image %}
-          <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+          <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; height: 160px; object-fit: {{ project.image_fit | default: 'cover' }}; background: #ffffff; padding: {% if project.image_fit == 'contain' %}0.75rem{% else %}0{% endif %}; display: block;">
         {% else %}
           Project Image
         {% endif %}
