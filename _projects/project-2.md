@@ -4,7 +4,7 @@ title: "Design, Build Fly Club"
 image_fit: "cover"
 section: "research"
 role: "Member"
-date_range: "Aug 2024 - Apr 2025"
+date_range: "Aug 2024 - Present"
 skills: [Woodworking, Laser Cutting, Monokote Covering, Hand Tools]
 image: /assets/images/dbf-plane.jpg
 description: "Assisted with manufacturing and finishing of competition aircraft components for Embry-Riddle's AIAA Design/Build/Fly team."
